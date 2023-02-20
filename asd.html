@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .kinezet{
+        font-size: 50px;
+        font-family: fantasy;
+        }
+
+        .nagybetus{
+            text-transform: uppercase;
+            font-style: italic;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <p id="quote">A semmi az a valami, ami nincs!</p>
+    
+    <p class="kozos">Éhes vagyok!</p>
+    <p class="kozos">Álmos vagyok!</p>
+    <p class="kozos">Haza akarok menni!</p>
+
+
+    kedvenc desszertjeim:
+    <ul>
+        <li>palacsinta</li>
+        <li>sajttorta</li>
+        <li>puding</li>
+    </ul>
+
+    <div id="szamok"></div>
+    <div id="szamokmashogy"></div>
+
+<script>
+    let nemtudom = document.getElementById("quote")
+    nemtudom.innerHTML=("A semmi az a valami, ami nincs")
+    nemtudom.style.fontFamily="gill sans"
+    nemtudom.setAttribute("style", "font-size:100px; font-weight: bold; color: purple")
+
+    let tomb = document.getElementsByClassName("kozos")
+    for (const elem of tomb) {
+        elem.style.color="purple"
+    }
+
+    let lista=document.getElementsByTagName("li")
+    //ul[0].setAttribute("class","nagybetüs")
+
+    let sz=""
+    for (let i = 1; i<=100; i++) {
+        sz+="<span>"
+        sz+=i
+        sz+="</span> &nbsp;"
+    }
+
+    document.getElementById("szamok").innerHTML=sz
+
+
+    for (let i = 1; i <= 100; i++)1{
+        let spancsinalo = document.createElement("span")
+        span.innerHTML=i+" "
+        document.getElementById("szamokmashogy").appendChild(span)
+    }
+
+    let desszert = ["palacsinta" , "torta", "pite", "somlói" , "muffin"]
+    let ol = document.createElement("ol")
+    for (const elem of desszert)
+    {
+        let li = document.createElement("li")
+        li.innerHTML = elem
+        ol.appendChild (li)
+    }
+    document.getElementById
+
+</script>
+
+</body>
+</html>
